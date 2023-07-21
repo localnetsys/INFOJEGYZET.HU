@@ -1,0 +1,6 @@
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\bin\Debug\Versenyzők.exe.config
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\bin\Debug\Versenyzők.exe
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\bin\Debug\Versenyzők.pdb
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\obj\Debug\Versenyzők.csprojResolveAssemblyReference.cache
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\obj\Debug\Versenyzők.exe
+c:\users\sys\documents\visual studio 2015\Projects\Versenyzők\Versenyzők\obj\Debug\Versenyzők.pdb

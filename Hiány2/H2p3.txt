@@ -1,0 +1,154 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Timers;
+using System.Threading.Tasks;
+
+namespace hiányzások
+{
+    class Program
+    {
+
+        struct tanulok
+        {
+            public string nev;
+            public string osztály;
+            public int nap1;
+            public int napU;
+            public int Lóg;
+
+        }
+
+        static void Main(string[] args)
+        {
+            List<tanulok> LISTAtan = new List<tanulok>();
+
+            string[] txt = File.ReadAllLines(@"szeptember.csv", Encoding.UTF8);   //ansi =UTF7
+
+            for (int s = 1; s < txt.Count(); s++)
+            {
+                if (txt[s].Length > 0)
+
+                {
+
+
+                    char[] separator = new char[] { ';' };
+                    string[] so = txt[s].Split(separator);
+
+                    tanulok adat = new tanulok();
+
+                    adat.nev = so[0];
+
+                    adat.osztály = so[1];
+                    adat.nap1 = Convert.ToInt32(so[2]);
+                    adat.napU = Convert.ToInt32(so[3]);
+                    adat.Lóg = Convert.ToInt32(so[4]);
+
+                    LISTAtan.Add(adat);
+                }
+            }
+            bool találat = false;
+            int t;
+            string nevek;
+            int cÖsszz = 0;
+            string[] nevsor = new string[LISTAtan.Count];
+            Console.WriteLine("\nAZ OSZTÁLY NÉVSOR : \t");
+            for (t = 1; t < LISTAtan.Count; t++)
+            {
+
+                cÖsszz += LISTAtan[t].Lóg;
+
+                if (t == 20) { Console.WriteLine("\t"); }
+
+                Console.Write(LISTAtan[t].nev + ("\t"));
+
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
+            Console.WriteLine("\nA Lógások száma  szeptemberben: " + cÖsszz);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Kerestett nap 1 és 30 között ?:");
+
+            int nap = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Tanulo Neve ?:");
+
+            string TANNEVE = Console.ReadLine();
+            Console.Clear();
+            int elsoT = 0;
+            int egynap;
+            string oszt = "";
+
+            for (int x = 0; x < LISTAtan.Count(); x++)
+            {
+
+                if ((LISTAtan[x].nap1 == nap) && (LISTAtan[x].nev == TANNEVE)) { találat = true; }
+                if (LISTAtan[x].nev == TANNEVE) { oszt = LISTAtan[x].osztály; }  //osztály azonosító megjelölése
+                /// else {  }
+
+            }
+
+            Console.WriteLine(találat);
+
+            if (találat == true) { Console.WriteLine(TANNEVE + " a  " + nap + ".napon, a " + oszt + ".osztályból lógott"); }
+
+
+            else { Console.WriteLine(TANNEVE + " a  " + nap + ".napon, " + " NEM lógott a " + oszt + ".osztályból "); }
+
+
+
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("\nAz osztályonkénti hiányzások összesítve :");
+
+
+            List<string> osztalyokSzam = new List<string>();
+            int c = 0;
+            for (int sz = 1; sz < 17; sz++)
+            {
+                if (sz < 9)
+                { osztalyokSzam.Add(sz + "a"); }
+                else
+                { c++; osztalyokSzam.Add(c + "b"); }
+
+            }
+
+
+            int o = 0;
+            int g;
+            int[] db = new int[LISTAtan.Count];
+            List<int> darab = new List<int>();
+            int[] cont = new int[LISTAtan.Count];
+
+            for (g = 0; g < osztalyokSzam.Count(); g++)
+            
+
+            {
+                foreach(tanulok e in LISTAtan)
+                { if (e.osztály == osztalyokSzam[g]) { Console.WriteLine("talált");db[g]++; }                      }
+
+                Console.WriteLine(osztalyokSzam[g] + "" + g+" db g  "+db[g]);
+
+                Console.ReadKey();   
+
+            }
+
+
+               
+               
+
+        
+            
+
+         
+
+
+            
+                
+        }
+
+
+        }
+
+    }
+

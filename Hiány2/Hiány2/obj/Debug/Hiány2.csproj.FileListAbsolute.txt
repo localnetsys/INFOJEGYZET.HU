@@ -1,0 +1,6 @@
+c:\users\sys\documents\visual studio 2015\Projects\Hiány2\Hiány2\bin\Debug\Hiány2.exe.config
+C:\Users\sys\Documents\Visual Studio 2015\Projects\Hiány2\Hiány2\bin\Debug\Hiány2.exe
+C:\Users\sys\Documents\Visual Studio 2015\Projects\Hiány2\Hiány2\bin\Debug\Hiány2.pdb
+C:\Users\sys\Documents\Visual Studio 2015\Projects\Hiány2\Hiány2\obj\Debug\Hiány2.csprojResolveAssemblyReference.cache
+C:\Users\sys\Documents\Visual Studio 2015\Projects\Hiány2\Hiány2\obj\Debug\Hiány2.exe
+C:\Users\sys\Documents\Visual Studio 2015\Projects\Hiány2\Hiány2\obj\Debug\Hiány2.pdb

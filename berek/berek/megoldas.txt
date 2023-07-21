@@ -1,0 +1,99 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+
+namespace berek
+{
+
+    struct berek
+    {
+        public string nev;
+        public string nem;
+        public string reszleg;
+        public int belep;
+        public int ber;
+
+    }
+
+    class Program
+    {
+
+        static void p() { Console.ReadKey(); }
+        static void print(string s) { Console.WriteLine(s.ToString()); }
+        static void f(int x) { Console.WriteLine(x + ". Feladat."); }
+        static void Main(string[] args)
+        {
+            List<berek> berL = new List<berek>();
+            int ful = 0;
+         
+            string[] txt = File.ReadAllLines("berek2020.txt", Encoding.UTF8);
+            for (int i = 1; i < txt.Count(); i++)
+            {
+                if (txt[i].Length > 0)
+                {
+
+                    string[] adat = txt[i].Split(';');
+                    berek uj = new berek();
+                    uj.nev = adat[0];
+                    uj.nem = adat[1];
+                    uj.reszleg = adat[2];
+                    uj.belep = Convert.ToInt32(adat[3]);
+                    uj.ber = Convert.ToInt32(adat[4]);
+
+                    berL.Add(uj);
+
+                }
+            }
+            f(1);
+            f(2);
+            print("Adatok beolvasva .");
+            f(3);
+            print("Az beolvaott állomány: " + berL.Count() + " adatot tartalmaz".ToString());
+         
+            int öszber = 0;
+            for (int j = 0; j < berL.Count(); j++)
+            {öszber += (berL[j].ber);}
+            f(4);
+            double atlag = öszber / berL.Count();
+            Console.WriteLine("AZ átlag bér: " + Math.Round(atlag * 0.001, 2) + " ezer forint.");
+            f(5);
+            Console.Write("Adjon meg egy reszleg nevet: ");
+            string be = Console.ReadLine();
+            int lt = 0;
+            int[] db = new int[9];
+            for (int j = 0; j < berL.Count(); j++)
+            {
+
+                if ((berL[j].reszleg == be) && (berL[j].ber > berL[lt].ber)) { lt = j;     }
+                if (berL[j].reszleg == "beszerzés"){ db[0]++;}
+                if (berL[j].reszleg == "pénzügy") { db[1]++; }
+                if (berL[j].reszleg == "asztalosműhely") { db[2]++; }
+                if (berL[j].reszleg == "értékesítés") { db[3]++; }
+                if (berL[j].reszleg == "lakatosműhely") { db[4]++; }
+                if (berL[j].reszleg == "karbantartás") { db[5]++; }
+                if (berL[j].reszleg == "szerelőműhely") { db[6]++; }
+                if (berL[j].reszleg == "személyzeti") { db[7]++; }
+
+            }
+            f(6);
+            print("\tNÉV: " + berL[lt].nev);
+            print("\tNEME: " + berL[lt].nem);
+            print("\tBelépés ideje: " + berL[lt].belep);
+            print("\tBér: " + berL[lt].ber+ " Ft");
+            f(7);
+            print("\tbeszerzés - " + db[0]); 
+            print("\tpénzügy - "+db[1]); 
+            print("\tasztalosműhely - "+db[2]);
+            print("\tértékesítés - "+db[3]); 
+            print("\tlakatosműhely - "+db[4]); 
+            print("\tkarbantartás - "+db[5]); 
+            print("\tszerelőműhely - "+db[6]); 
+            print("\tszemélyzeti - "+db[7]);
+            p();
+        }
+    }
+}
