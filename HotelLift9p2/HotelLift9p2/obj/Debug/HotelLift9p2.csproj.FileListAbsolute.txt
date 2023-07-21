@@ -1,0 +1,18 @@
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe.config
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.pdb
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.csprojResolveAssemblyReference.cache
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.exe
+c:\users\sysi5\documents\visual studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.pdb
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe.config
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.exe
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.pdb
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.pdb
+C:\Users\sys\Documents\Visual Studio 2015\Projects\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.csprojResolveAssemblyReference.cache
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe.config
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.exe
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.pdb
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.exe
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\bin\Debug\HotelLift9p2.pdb
+C:\M\Downloads\INFOJEGYZET.HU-main\INFOJEGYZET.HU-main\HotelLift9p2\HotelLift9p2\obj\Debug\HotelLift9p2.csprojResolveAssemblyReference.cache
